@@ -1,0 +1,288 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') no-repeat @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+#head{
+	background-color: @head_color;
+	width: 100%;
+	margin-bottom: 0.4rem;
+	.over_hi();
+	.daohang{
+		.display(flex);
+		justify-content: space-around;
+		margin-top: 0.54rem;
+		margin-bottom: 0.22rem;
+		.yuyin{
+			.size(0.25rem,0.37rem);
+			.bgc(-0.05rem,0.0rem);
+			margin-top: 0.12rem;
+		}
+		.sou{
+			.dingwei(relative);
+			.size(5.48rem,0.6rem);
+			.search{
+				.dingwei(absolute);
+				.size(100%,100%);
+				.fonta(0.18rem,#dcdcdc);
+				.fontb(0.6rem,center);
+				border-radius: 0.15rem;
+			}
+			.soupic{
+				.size(0.26rem,0.26rem);
+				.bgc(-0.04rem,-0.56rem);
+				.dingwei(absolute);
+				top: 0.2rem;
+				left: 1.2rem;
+			}
+		}
+		.bo{
+			.size(0.4rem,0.36rem);
+			.bgc(0.0rem,-0.86rem);
+			margin-top: 0.12rem;
+		}
+	}
+	.dao{
+		.display(flex);
+		.fonta(0.32rem,#fff);
+		width: 100%;
+		li{
+			height: 0.72rem;
+			line-height: 0.72rem;
+		}
+		.a{
+			margin-left: 1.1rem;
+		}
+		.b{
+			margin-left: 0.25rem;
+		}
+		.c{
+			color: #37dff3;
+			border-bottom: 2px solid #37dff3;
+		}
+	}
+}
+#di{
+	width: 6.92rem;
+	margin: 0 auto;
+	.biao1{
+		.display(flex);
+		justify-content: space-around;
+		.fonta(0.2rem,#787878);
+		li{
+			height: 1.12rem;
+			box-sizing: border-box;
+			padding-top: 0.55rem;
+		}
+		.biao1a{
+			background: url('../images/dianyin.png') no-repeat top center;
+			background-size: 0.44rem 0.44rem;
+		}
+		.biao1b{
+			background: url('../images/dianqin.png') no-repeat top center;
+			background-size: 0.58rem 0.42rem;
+		}
+		.biao1c{
+			background: url('../images/dianyu.png') no-repeat top center;
+			background-size: 0.39rem 0.42rem;
+		}
+		.biao1d{
+			background: url('../images/diansan.png') no-repeat top center;
+			background-size: 0.45rem 0.43rem;
+		}
+		.biao1e{
+			background: url('../images/dianren.png') no-repeat top center;
+			background-size: 0.43rem 0.39rem;
+		}
+		.biao1f{
+			background: url('../images/dianer.png') no-repeat top center;
+			background-size: 0.39rem 0.39rem;
+		}
+		.biao1g{
+			background: url('../images/dianyou.png') no-repeat top center;
+			background-size: 0.57rem 0.38rem;
+		}
+		.biao1h{
+			background: url('../images/dianqu.png') no-repeat top center;
+			background-size: 0.41rem 0.40rem;
+		}
+	}
+	.jingcai{
+		width: 100%;
+		margin-top: 0.45rem;
+		.jinga{
+			.fonta(0.35rem,#000);
+			border-left: 2px solid #000;
+			text-indent: 0.2rem;
+			margin-bottom: 0.2rem;
+		}
+		.jingb{
+			.size(100%,1.28rem);
+			border-bottom: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+			.display(flex);
+			.tu{
+				.size(0.9rem,0.9rem);
+				margin-top: 0.19rem;
+				background: url(../images/diantua.jpg) no-repeat;
+				background-size: 0.9rem 0.9rem;
+				margin-right: 0.16rem;
+			}
+			.zi{
+				flex: 1;
+				.fonta(0.27rem,#000);
+				line-height: 0.4rem;
+				box-sizing: border-box;
+				padding-top: 0.2rem;
+			}
+		}
+		.jingc{
+			.size(100%,1.28rem);
+			border-bottom: 1px solid #ccc;
+			.display(flex);
+			.tu{
+				.size(0.9rem,0.9rem);
+				margin-top: 0.19rem;
+				background: url(../images/diantub.jpg) no-repeat;
+				background-size: 0.9rem 0.9rem;
+				margin-right: 0.16rem;
+			}
+			.zi{
+				flex: 1;
+				.fonta(0.27rem,#000);
+				line-height: 0.4rem;
+				box-sizing: border-box;
+				padding-top: 0.2rem;
+			}
+		}
+	}
+	.day{
+		width: 100%;
+		margin-top: 0.6rem;
+		.tui{
+			.fonta(0.35rem,#000);
+			border-left: 2px solid #000;
+			text-indent: 0.2rem;
+			margin-bottom: 0.5rem;
+		}
+		.picList{
+			.display(flex);
+			width: 100%;
+			justify-content: space-between;
+			li{
+				.size(2.2rem,3.6rem);
+			}
+			.one1{
+				background: url('../images/lista.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.one2{
+				background: url('../images/listb.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.two1{
+				background: url('../images/list2.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.two2{
+				background: url('../images/list3.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.three1{
+				background: url('../images/lista.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.three2{
+				background: url('../images/listc.jpg') no-repeat top;
+				background-size: 2.2rem 2.2rem;
+			}
+			.botzi{
+				width: 100%;
+				.fonta(0.28rem,#000);
+				margin-top: 2.3rem;
+				line-height: 0.4rem;
+			}
+		}
+	}
+}
+#bottom{
+	.size(100%,0.98rem);
+	.display(flex);
+	justify-content: space-around;
+	background-color: #fff;
+	.dingwei(fixed);
+	bottom: 0;
+	li{
+		text-align: center;
+		.dingwei(relative);
+	}
+	.boa{
+		background: url('../images/yinyue.png') no-repeat top center;
+		background-size: 0.48rem 0.36rem;
+		margin-top: 0.12rem;
+	}
+	.bob{
+		background: url('../images/die.png') no-repeat top center;
+		background-size: 0.44rem 0.44rem;
+		margin-top: 0.12rem;
+	}
+	.boc{
+		background: url('../images/pen.png') no-repeat top center;
+		background-size: 0.31rem 0.42rem;
+		margin-top: 0.12rem;
+	}
+	.bod{
+		background: url('../images/lian.png') no-repeat top center;
+		background-size: 0.43rem 0.45rem;
+		margin-top: 0.12rem;
+	}
+	.boa1{
+		.fonta(0.2rem,#282828);
+		.display(block);
+		margin-top: 0.5rem;
+	}
+	.boa2{
+		.fonta(0.2rem,#282828);
+		.display(block);
+		margin-top: 0.5rem;
+		text-decoration: none;
+	}
+}

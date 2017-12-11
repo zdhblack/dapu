@@ -1,0 +1,85 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+@a: #ccc;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+body{
+	background-color: #eee;
+}
+#pic{
+	.size(100%,13.34rem);
+	background: url('../images/play.png') no-repeat center;
+	background-size: 100% 13.34rem;
+	.dingwei(relative);
+	.back{
+		.size(0.34rem,0.34rem);
+		background: url('../images/leftjian.png') no-repeat center;
+		background-size: 0.34rem 0.34rem;
+		.dingwei(absolute);
+		top:0.64rem;
+		left: 0.3rem;
+	}
+	.heart{
+		.size(0.6rem,0.6rem);
+		background: url('../images/心.png') no-repeat center;
+		background-size: 0.6rem 0.6rem;
+		.dingwei(absolute);
+		bottom: 0.9rem;
+		left: 2.0rem;
+	}
+	.play{
+		.size(0.7rem,0.7rem);
+		background: url('../images/bofang.png') no-repeat center;
+		background-size: 0.7rem 0.7rem;
+		.dingwei(absolute);
+		bottom: 0.89rem;
+		left: 3.41rem;
+	}
+	.next{
+		.size(0.7rem,0.7rem);
+		background: url('../images/next.png') no-repeat center;
+		background-size: 0.7rem 0.7rem;
+		.dingwei(absolute);
+		bottom: 0.89rem;
+		right: 1.98rem;
+	}
+}

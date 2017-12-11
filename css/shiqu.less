@@ -1,0 +1,114 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+@a: #ccc;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+body{
+	background-color: #eee;
+}
+#head{
+	background-color: @head_color;
+	width: 100%;
+	.over_hi();
+	.daohang{
+		.display(flex);
+		width: 6.9rem;
+		justify-content: space-between;
+		margin: 0.64rem auto 0.26rem;
+		.back{
+			.size(0.2rem,0.34rem);
+			background: url('../images/back.png') no-repeat center;
+			background-size: 0.2rem 0.34rem;
+		}
+		.sou{
+			.fonta(0.36rem,#fff);
+		}
+		.bo{
+			.size(0.4rem,0.36rem);
+			.bgc(0.0rem,-0.86rem);
+		}
+	}
+}
+#pic{
+	.size(7.5rem,8.59rem);
+	background: url('../images/shiqu.png') no-repeat center;
+	background-size: 7.5rem 8.59rem;
+}
+
+#bottom{
+	.size(100%,0.98rem);
+	.display(flex);
+	justify-content: space-around;
+	background-color: #fff;
+	.dingwei(fixed);
+	bottom: 0;
+	li{
+		text-align: center;
+		.dingwei(relative);
+	}
+	.boa{
+		background: url('../images/yinyuea.png') no-repeat top center;
+		background-size: 0.48rem 0.36rem;
+		margin-top: 0.12rem;
+	}
+	.bob{
+		background: url('../images/die.png') no-repeat top center;
+		background-size: 0.44rem 0.44rem;
+		margin-top: 0.12rem;
+	}
+	.boc{
+		background: url('../images/pen.png') no-repeat top center;
+		background-size: 0.31rem 0.42rem;
+		margin-top: 0.12rem;
+	}
+	.bod{
+		background: url('../images/lian.png') no-repeat top center;
+		background-size: 0.43rem 0.45rem;
+		margin-top: 0.12rem;
+	}
+	.boa2{
+		.fonta(0.2rem,#282828);
+		.display(block);
+		margin-top: 0.5rem;
+		text-decoration: none;
+	}
+}

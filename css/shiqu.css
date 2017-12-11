@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  font-size: 13.33333333vw;
+}
+body {
+  background-color: #eee;
+}
+#head {
+  background-color: #252525;
+  width: 100%;
+  overflow: hidden;
+}
+#head .daohang {
+  display: flex;
+  width: 6.9rem;
+  justify-content: space-between;
+  margin: 0.64rem auto 0.26rem;
+}
+#head .daohang .back {
+  width: 0.2rem;
+  height: 0.34rem;
+  background: url('../images/back.png') no-repeat center;
+  background-size: 0.2rem 0.34rem;
+}
+#head .daohang .sou {
+  font-size: 0.36rem;
+  color: #ffffff;
+}
+#head .daohang .bo {
+  width: 0.4rem;
+  height: 0.36rem;
+  background: url('../images/sprit.png') 0rem -0.86rem;
+  background-size: 5.0rem 5.0rem;
+}
+#pic {
+  width: 7.5rem;
+  height: 8.59rem;
+  background: url('../images/shiqu.png') no-repeat center;
+  background-size: 7.5rem 8.59rem;
+}
+#bottom {
+  width: 100%;
+  height: 0.98rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+#bottom li {
+  text-align: center;
+  position: relative;
+}
+#bottom .boa {
+  background: url('../images/yinyuea.png') no-repeat top center;
+  background-size: 0.48rem 0.36rem;
+  margin-top: 0.12rem;
+}
+#bottom .bob {
+  background: url('../images/die.png') no-repeat top center;
+  background-size: 0.44rem 0.44rem;
+  margin-top: 0.12rem;
+}
+#bottom .boc {
+  background: url('../images/pen.png') no-repeat top center;
+  background-size: 0.31rem 0.42rem;
+  margin-top: 0.12rem;
+}
+#bottom .bod {
+  background: url('../images/lian.png') no-repeat top center;
+  background-size: 0.43rem 0.45rem;
+  margin-top: 0.12rem;
+}
+#bottom .boa2 {
+  font-size: 0.2rem;
+  color: #282828;
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}

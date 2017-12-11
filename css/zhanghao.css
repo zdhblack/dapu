@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  font-size: 13.33333333vw;
+}
+#head {
+  background-color: #252525;
+  width: 100%;
+  overflow: hidden;
+}
+#head .daohang {
+  display: flex;
+  width: 6.9rem;
+  justify-content: space-between;
+  margin: 0.64rem auto 0.26rem;
+}
+#head .daohang .yuyin {
+  font-size: 0.28rem;
+  color: #ffffff;
+}
+#head .daohang .sou {
+  font-size: 0.36rem;
+  color: #ffffff;
+}
+#head .daohang .bo {
+  width: 0.4rem;
+  height: 0.36rem;
+  background: url('../images/sprit.png') no-repeat 0rem -0.86rem;
+  background-size: 5.0rem 5.0rem;
+}
+#zhang {
+  width: 100%;
+  height: 1.8rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+#zhang .tou {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url('../images/tou2.jpg') no-repeat center;
+  background-size: 1.2rem 1.2rem;
+  margin: 0.2rem 0.2rem 0.0rem 0.2rem;
+  border-radius: 50%;
+}
+#zhang .ming {
+  flex: 1;
+  margin-top: 0.4rem;
+}
+#zhang .ming .nicheng {
+  font-size: 0.35rem;
+  color: #000000;
+  margin-bottom: 0.2rem;
+}
+#zhang .ming .dengji {
+  font-size: 0.25rem;
+  color: #b8b5b5;
+}
+#list {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+}
+#list .banner {
+  display: flex;
+  justify-content: space-between;
+}
+#list .banner .banlia {
+  width: 1.72rem;
+  height: 0.74rem;
+  font-size: 0.28rem;
+  color: #cbc9c9;
+  border-right: 1px solid #ccc;
+  margin-top: 0.2rem;
+  text-align: center;
+  line-height: 0.36rem;
+}
+#list .banner .banlia .guan {
+  font-size: 0.32rem;
+  color: #000000;
+}
+#list .bianji {
+  flex: 1;
+  font-size: 0.28rem;
+  color: #cbc9c9;
+  background: url('../images/pen.png') no-repeat top center;
+  margin-top: 0.2rem;
+  background-size: 0.32rem 0.32rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 0.4rem;
+}
+#bot {
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+}
+#bot .xiaoxi {
+  width: 100%;
+  height: 0.84rem;
+  background-color: #fff;
+  margin: 0.2rem 0.0rem;
+  display: flex;
+}
+#bot .xiaoxi .xiaol {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/xin.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .xiaoxi .xiaol1 {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/guan.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .xiaoxi .zi {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-right: 0.3rem;
+}
+#bot .xiaoxi .zi .word {
+  font-size: 0.28rem;
+  color: #000000;
+  line-height: 0.84rem;
+  text-align: left;
+}
+#bot .xiaoxi .zi .jian {
+  width: 0.22rem;
+  height: 100%;
+  background: url('../images/jian1.png') no-repeat;
+  background-size: 0.22rem 0.28rem;
+  background-position: center center;
+}
+#bot .botlist {
+  width: 100%;
+}
+#bot .botlist .xiaoxi1 {
+  width: 100%;
+  height: 0.84rem;
+  background-color: #fff;
+  display: flex;
+}
+#bot .botlist .xiaoxi1 .xiaol {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/xin.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .botlist .xiaoxi1 .xiaola {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/she.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .botlist .xiaoxi1 .xiaolb {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/close.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .botlist .xiaoxi1 .xiaolc {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/deng.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .botlist .xiaoxi1 .xiaold {
+  width: 0.32rem;
+  height: 0.84rem;
+  background: url('../images/clock.png') no-repeat center;
+  background-size: 0.32rem 0.84rem;
+  margin-left: 34px;
+  margin-right: 0.25rem;
+}
+#bot .botlist .xiaoxi1 .zi {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-right: 0.3rem;
+}
+#bot .botlist .xiaoxi1 .zi .word {
+  font-size: 0.28rem;
+  color: #000000;
+  line-height: 0.84rem;
+  text-align: left;
+}
+#bot .botlist .xiaoxi1 .zi .jian {
+  width: 0.22rem;
+  height: 100%;
+  background: url('../images/jian1.png') no-repeat;
+  background-size: 0.22rem 0.28rem;
+  background-position: center center;
+}
+#bot .botlist .xiaoxi1 .zi .jian1 {
+  width: 1.3rem;
+  height: 100%;
+  font-size: 0.28rem;
+  color: #868687;
+  line-height: 0.84rem;
+  background: url('../images/jian1.png') no-repeat;
+  background-size: 0.22rem 0.28rem;
+  background-position: right center;
+}
+#bot .botlist .xiaoxi1 .zi .jiana {
+  width: 1.14rem;
+  height: 100%;
+  background: url('../images/toggle.png') no-repeat;
+  background-size: 1.14rem 0.56rem;
+  background-position: right center;
+}
+.end {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.35rem;
+  color: #000000;
+  line-height: 0.85rem;
+  text-align: center;
+  background-color: #fff;
+  margin: 0.2rem 0.0rem;
+}
+#bottom {
+  width: 100%;
+  height: 0.98rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+#bottom li {
+  text-align: center;
+  position: relative;
+}
+#bottom .boa {
+  background: url('../images/yinyuea.png') no-repeat top center;
+  background-size: 0.48rem 0.36rem;
+  margin-top: 0.12rem;
+}
+#bottom .bob {
+  background: url('../images/die.png') no-repeat top center;
+  background-size: 0.44rem 0.44rem;
+  margin-top: 0.12rem;
+}
+#bottom .boc {
+  background: url('../images/pen.png') no-repeat top center;
+  background-size: 0.31rem 0.42rem;
+  margin-top: 0.12rem;
+}
+#bottom .bod {
+  background: url('../images/笑脸.png') no-repeat top center;
+  background-size: 0.43rem 0.45rem;
+  margin-top: 0.12rem;
+}
+#bottom .boa2 {
+  font-size: 0.2rem;
+  color: #282828;
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}

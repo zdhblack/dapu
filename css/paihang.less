@@ -1,0 +1,196 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') no-repeat @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+#head{
+	background-color: @head_color;
+	width: 100%;
+	.over_hi();
+	.daohang{
+		.display(flex);
+		justify-content: space-around;
+		margin-top: 0.54rem;
+		margin-bottom: 0.22rem;
+		.yuyin{
+			.size(0.25rem,0.37rem);
+			.bgc(-0.05rem,0.0rem);
+			margin-top: 0.12rem;
+		}
+		.sou{
+			.dingwei(relative);
+			.size(5.48rem,0.6rem);
+			.search{
+				.dingwei(absolute);
+				.size(100%,100%);
+				.fonta(0.18rem,#dcdcdc);
+				.fontb(0.6rem,center);
+				border-radius: 0.15rem;
+			}
+			.soupic{
+				.size(0.26rem,0.26rem);
+				.bgc(-0.04rem,-0.56rem);
+				.dingwei(absolute);
+				top: 0.2rem;
+				left: 1.2rem;
+			}
+		}
+		.bo{
+			.size(0.4rem,0.36rem);
+			.bgc(0.0rem,-0.86rem);
+			margin-top: 0.12rem;
+		}
+	}
+	.dao{
+		.display(flex);
+		.fonta(0.32rem,#fff);
+		width: 100%;
+		li{
+			height: 0.72rem;
+			line-height: 0.72rem;
+		}
+		.a{
+			margin-left: 1.1rem;
+		}
+		.b{
+			margin-left: 0.25rem;
+		}
+		.c{
+			color: #37dff3;
+			border-bottom: 2px solid #37dff3;
+		}
+	}
+}
+#di{
+	margin: 0.3rem 0 0 0.3rem;
+	.biao{
+		.fonta(0.36rem,#000);
+		border-left: 2px solid #000;
+		text-indent: 0.2rem;
+		margin-bottom: 0.28rem;
+	}
+	.tu{
+		width: 100%;
+		.tu1{
+			.display(flex);
+			justify-content: space-between;
+			margin-bottom: 0.3rem;
+			.rig{
+				.size(4.5rem,2.42rem);
+				border-bottom: 1px solid #ccc;
+				box-sizing: border-box;
+				.fonta(0.26rem,#000);
+				padding-top: 0.14rem;
+				li{
+					margin-top: 0.25rem;
+				}
+			}
+		}
+		.lefa{
+			.size(2.42rem,2.42rem);
+			background: url('../images/paia.png') no-repeat;
+			background-size: 2.42rem 2.42rem;
+		}
+		.lefb{
+			.size(2.42rem,2.42rem);
+			background: url('../images/paib.png') no-repeat;
+			background-size: 2.42rem 2.42rem;
+		}
+		.lefc{
+			.size(2.42rem,2.42rem);
+			background: url('../images/paic.png') no-repeat;
+			background-size: 2.42rem 2.42rem;
+		}
+		.lefd{
+			.size(2.42rem,2.42rem);
+			background: url('../images/paid.jpg') no-repeat;
+			background-size: 2.42rem 2.42rem;
+		}
+		.lefe{
+			.size(2.42rem,2.42rem);
+			background: url('../images/paie.jpg') no-repeat;
+			background-size: 2.42rem 2.42rem;
+		}
+	}
+}
+#bottom{
+	.size(100%,0.98rem);
+	.display(flex);
+	justify-content: space-around;
+	background-color: #fff;
+	.dingwei(fixed);
+	bottom: 0rem;
+	li{
+		text-align: center;
+		.dingwei(relative);
+	}
+	.boa{
+		background: url('../images/yinyue.png') no-repeat top center;
+		background-size: 0.48rem 0.36rem;
+		margin-top: 0.12rem;
+	}
+	.bob{
+		background: url('../images/die.png') no-repeat top center;
+		background-size: 0.44rem 0.44rem;
+		margin-top: 0.12rem;
+	}
+	.boc{
+		background: url('../images/pen.png') no-repeat top center;
+		background-size: 0.31rem 0.42rem;
+		margin-top: 0.12rem;
+	}
+	.bod{
+		background: url('../images/lian.png') no-repeat top center;
+		background-size: 0.43rem 0.45rem;
+		margin-top: 0.12rem;
+	}
+	.boa1{
+		.fonta(0.2rem,#282828);
+		.display(block);
+		margin-top: 0.5rem;
+	}
+	.boa2{
+		.fonta(0.2rem,#282828);
+		.display(block);
+		margin-top: 0.5rem;
+		text-decoration: none;
+	}
+}

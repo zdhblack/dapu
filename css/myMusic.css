@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  font-size: 13.33333333vw;
+}
+#head {
+  background-color: #252525;
+  width: 100%;
+  overflow: hidden;
+}
+#head .daohang {
+  display: flex;
+  width: 6.9rem;
+  justify-content: space-between;
+  margin: 0.64rem auto 0.26rem;
+}
+#head .daohang .yuyin {
+  font-size: 0.28rem;
+  color: #ffffff;
+}
+#head .daohang .sou {
+  font-size: 0.36rem;
+  color: #ffffff;
+}
+#head .daohang .bo {
+  width: 0.4rem;
+  height: 0.36rem;
+  background: url('../images/sprit.png') no-repeat 0rem -0.86rem;
+  background-size: 5.0rem 5.0rem;
+}
+#bott {
+  background-color: #eee;
+}
+#bott .list {
+  width: 100%;
+  background-color: #fff;
+}
+#bott .list .lista {
+  display: flex;
+  justify-content: space-between;
+}
+#bott .list .lista .biao {
+  width: 0.9rem;
+  height: 0.84rem;
+  background: url('../images/mydown.png') no-repeat right center;
+  background-size: 0.39rem 0.33rem;
+}
+#bott .list .lista .biao1 {
+  width: 0.9rem;
+  height: 0.84rem;
+  background: url('../images/my.png') no-repeat right center;
+  background-size: 0.33rem 0.38rem;
+}
+#bott .list .lista .biao2 {
+  width: 0.9rem;
+  height: 0.84rem;
+  background: url('../images/myzui.png') no-repeat right center;
+  background-size: 0.38rem 0.37rem;
+}
+#bott .list .lista .zi {
+  width: 6.28rem;
+  height: 0.84rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.28rem;
+  color: #000000;
+  line-height: 0.84rem;
+  text-align: left;
+  position: relative;
+}
+#bott .list .lista .zi .jian {
+  width: 0.76rem;
+  font-size: 0.2rem;
+  color: #dfdede;
+  position: absolute;
+  right: 0.3rem;
+  top: 0;
+  background: url('../images/jian1.png') no-repeat right;
+  background-size: 0.15rem 0.24rem;
+}
+#bott .list .lista .zi1 {
+  width: 6.28rem;
+  height: 0.84rem;
+  font-size: 0.28rem;
+  color: #000000;
+  line-height: 0.84rem;
+  text-align: left;
+  position: relative;
+}
+#bott .list .lista .zi1 .jian {
+  width: 0.76rem;
+  font-size: 0.2rem;
+  color: #dfdede;
+  position: absolute;
+  right: 0.3rem;
+  top: 0;
+  background: url('../images/jian1.png') no-repeat right;
+  background-size: 0.15rem 0.24rem;
+}
+#bott .favor {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+}
+#bott .favor .jiantou {
+  margin-left: 0.28rem;
+  margin-right: 0.16rem;
+  width: 0.25rem;
+  height: 100%;
+  background: url('../images/xia.png') no-repeat;
+  background-size: 0.25rem 0.25rem;
+  background-position: center center;
+}
+#bott .favor .word {
+  font-size: 0.26rem;
+  color: #616161;
+  line-height: 0.8rem;
+}
+#bott .liebiao1 {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #fff;
+}
+#bott .liebiao1 .icon {
+  margin-left: 0.28rem;
+  margin-right: 0.25rem;
+  width: 0.74rem;
+  height: 100%;
+  background: url('../images/mylista.png') no-repeat center;
+  background-size: 0.74rem 0.74rem;
+  float: left;
+}
+#bott .liebiao1 .wenzi {
+  font-size: 0.3rem;
+  color: #000000;
+  line-height: 0.37rem;
+  box-sizing: border-box;
+  padding-top: 0.22rem;
+  float: left;
+}
+#bott .liebiao1 .wenzi .change {
+  font-size: 0.22rem;
+  color: #616161;
+}
+#bott .shoucang {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+}
+#bott .shoucang .jiantou1 {
+  margin-left: 0.28rem;
+  margin-right: 0.16rem;
+  width: 0.25rem;
+  height: 100%;
+  background: url('../images/xia.png') no-repeat;
+  background-size: 0.25rem 0.25rem;
+  background-position: center center;
+}
+#bott .shoucang .word1 {
+  font-size: 0.26rem;
+  color: #616161;
+  line-height: 0.8rem;
+}
+#bott .di {
+  width: 100%;
+}
+#bott .di .liebiao2 {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #fff;
+  display: flex;
+}
+#bott .di .liebiao2 .icon1 {
+  margin-left: 0.28rem;
+  margin-right: 0.25rem;
+  width: 0.74rem;
+  height: 100%;
+  background: url('../images/mylistb.png') no-repeat center;
+  background-size: 0.74rem 0.74rem;
+}
+#bott .di .liebiao2 .icon2 {
+  margin-left: 0.28rem;
+  margin-right: 0.25rem;
+  width: 0.74rem;
+  height: 100%;
+  background: url('../images/mylistc.png') no-repeat center;
+  background-size: 0.74rem 0.74rem;
+}
+#bott .di .liebiao2 .wenzi {
+  font-size: 0.3rem;
+  color: #000000;
+  line-height: 0.37rem;
+  box-sizing: border-box;
+  padding-top: 0.22rem;
+}
+#bott .di .liebiao2 .wenzi .change {
+  font-size: 0.22rem;
+  color: #616161;
+}
+#bottom {
+  width: 100%;
+  height: 0.98rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+#bottom li {
+  text-align: center;
+  position: relative;
+}
+#bottom .boa {
+  background: url('../images/yinyuea.png') no-repeat top center;
+  background-size: 0.48rem 0.36rem;
+  margin-top: 0.12rem;
+}
+#bottom .bob {
+  background: url('../images/diea.png') no-repeat top center;
+  background-size: 0.44rem 0.44rem;
+  margin-top: 0.12rem;
+}
+#bottom .boc {
+  background: url('../images/pen.png') no-repeat top center;
+  background-size: 0.31rem 0.42rem;
+  margin-top: 0.12rem;
+}
+#bottom .bod {
+  background: url('../images/lian.png') no-repeat top center;
+  background-size: 0.43rem 0.45rem;
+  margin-top: 0.12rem;
+}
+#bottom .boa2 {
+  font-size: 0.2rem;
+  color: #282828;
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}

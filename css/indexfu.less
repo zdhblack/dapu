@@ -1,0 +1,70 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+@a: #ccc;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+#mid{
+	.size(100%,100%);
+	.swiper-container{
+		.size(100%,100%);
+		.swiper-wrapper{
+			.size(100%,100%);
+			.swiper-slide{
+				.size(100%,100%);
+				.dingwei(relative);
+			}
+		}
+	}
+	.open{
+		.dingwei(absolute);
+		.size(3.34rem,1.22rem);
+		border: 0.02rem solid #72c3f9;
+		border-radius: 0.1rem;
+		.fonta(0.5rem,#888787);
+		.fontb(1.22rem,center);
+		font-weight: bold;
+		top: 10.52rem;
+		left: 50%;
+		margin-left: -1.67rem;
+		text-decoration: none;
+	}
+}

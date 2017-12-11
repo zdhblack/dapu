@@ -1,0 +1,121 @@
+@ht_size: 13.33333333vw;
+@head_color: #252525;
+@a: #ccc;
+.over_hi(){
+	overflow: hidden;
+}
+.size(@w,@h){
+	width: @w;
+	height: @h;
+}
+.bgc(@x,@y){
+	background: url('../images/sprit.png') @x @y;
+	background-size: 5.0rem 5.0rem;
+}
+.dingwei(@po){
+	position: @po;
+}
+.fonta(@siz,@col){
+	font-size: @siz;
+	color: @col
+}
+.fontb(@line,@text){
+	line-height: @line;
+	text-align: @text;
+}
+.display(@where){
+	display: @where
+}
+.border(@size,@color,@xing: solid){
+	border: @size @xing @color;
+}
+.yin(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html{
+	font-size: @ht_size;
+}
+body{
+	background-color: #eee;
+}
+#head{
+	background-color: @head_color;
+	width: 100%;
+	.over_hi();
+	.daohang{
+		.display(flex);
+		width: 6.9rem;
+		justify-content: space-between;
+		margin: 0.64rem auto 0.26rem;
+		.back{
+			.size(0.2rem,0.34rem);
+			background: url('../images/back.png') no-repeat center;
+			background-size: 0.2rem 0.34rem;
+		}
+		.sou{
+			.fonta(0.36rem,#fff);
+		}
+		.bo{
+			.size(0.4rem,0.36rem);
+			.bgc(0.0rem,-0.86rem);
+		}
+	}
+}
+#list{
+	width: 100%;
+	margin-top: 0.24rem;
+	background-color: #fff;
+	.lista{
+		.size(100%,0.84rem);
+		background: url('../images/biao.png') no-repeat center;
+		background-size: 100%,0.84rem;
+		border-bottom: 1px solid #eee;
+		.dingwei(relative);
+	}
+	.listb{
+		.size(100%,0.84rem);
+		background: url('../images/jiaogao.png') no-repeat center;
+		background-size: 100%,0.84rem;
+		border-bottom: 1px solid #eee;
+		.dingwei(relative);
+	}
+	.listc{
+		.size(100%,0.84rem);
+		background: url('../images/jigao.png') no-repeat center;
+		background-size: 100%,0.84rem;
+		border-bottom: 1px solid #eee;
+		.dingwei(relative);
+	}
+	.listd{
+		.size(100%,0.84rem);
+		background: url('../images/wusun.png') no-repeat center;
+		background-size: 100%,0.84rem;
+		.dingwei(relative);
+	}
+	.true{
+		.size(0.3rem,0.3rem);
+		background: url('../images/对号.png') no-repeat center;
+		background-size: 0.3rem 0.3rem;
+		.dingwei(absolute);
+		top: 50%;
+		margin-top: -0.15rem;
+		right: 0.3rem;
+		display: none;
+	}
+	.true1{
+		.size(0.3rem,0.3rem);
+		background: url('../images/对号.png') no-repeat center;
+		background-size: 0.3rem 0.3rem;
+		.dingwei(absolute);
+		top: 50%;
+		margin-top: -0.15rem;
+		right: 0.3rem;
+	}
+}
